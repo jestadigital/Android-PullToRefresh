@@ -263,7 +263,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout {
 	 * Mark the current Refresh as complete. Will Reset the UI and hide the
 	 * Refreshing View
 	 */
-	public final void onRefreshComplete() {
+	public /*final*/ void onRefreshComplete() {
 		if (mState != PULL_TO_REFRESH) {
 			resetHeader();
 		}
